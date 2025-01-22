@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hecenii</title>
+  <link rel="stylesheet" href="1site.css" />
+  <link rel="stylesheet" href="1main.css" />
+</head>
+
+<body style="background-color: rgb(255, 229, 194);">
+  <script>
+    function playvideo() {
+      let place = document.getElementById("place");
+      place.innerHTML = `
+        <iframe width="550px" height="350px" 
+                src="https://www.youtube.com/embed/lM0zmV2p5YM" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin" 
+                allowfullscreen>
+        </iframe>`;
+    }
+  </script>
+
+  <!-- Bara de navigare -->
+  <ul class="border">
+    <li>
+      <h1 style="color: rgb(255, 255, 255)" id="Titlul" class="thick"><a href="1site.html" style="text-decoration: none;"
+          class="active"> Ansamblul Hecenii </a>
+      </h1>
+    </li>
+    <li>
+      <h1 style="color: rgb(255, 255, 255)" id="Titlul"><a href="1Membri.html"
+          style="text-decoration: none;">Membri</a> </h1>
+    </li>
+    <li>
+      <h1 style="color: rgb(255, 255, 255)" id="Titlul"><a href="1Poze.html"> Poze </a> </h1>
+    </li>
+    <li>
+      <h1 style="color: rgb(255, 255, 255)" id="Titlul"><a href="1Contact.html">Contact</a></h1>
+    </li>
+    <li>
+      <h1 style="color: rgb(255, 255, 255)" id="Titlul"><a href="1Contact.html"> Repertoriu </a> </h1>
+    </li>
+  </ul>
+
+  <!-- Conținutul principal -->
+  <div id="image">
+    <div id="patrat">
+      <h2>Ansamblul Hecenii</h2>
+      <p>„Păstrăm tradiția vie!”</p>
+      <p>
+        Ansamblul Hecenii este dedicat promovării și conservării tradițiilor populare românești.
+        Prin dansuri, cântece și obiceiuri autentice, aducem folclorul mai aproape de inimile oamenilor,
+        atât în țară, cât și în străinătate.
+      </p>
+      <h3>Misiune și Valori</h3>
+      <p>
+        Misiunea noastră este de a transmite generațiilor următoare frumusețea tradițiilor românești.
+        Valorile noastre sunt respectul față de cultură, unitatea comunității și educația culturală.
+      </p>
+      <h3>Participă și Tu!</h3>
+      <p>
+        Dacă ești pasionat de tradiții, te invităm să ni te alături! Organizăm ateliere și evenimente pentru toate
+        vârstele.
+        Contactează-ne pentru mai multe detalii și fii parte din tradiția noastră!
+      </p>
+    </div>
+
+    <div id="place">
+      <img onclick="playvideo()"
+        src="https://storage.agora.md/api/v1/t/a2ac90dc6e7458685c10b9ce1ac0ff485dfeb7fe/public/fit_1280"
+        alt="Thumbnail video" />
+    </div>
+  </div>
+</body>
+
+</html>
