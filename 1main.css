@@ -31,6 +31,17 @@ img {
   border: 3px solid rgb(161, 80, 0);
   right: 0;
 }
+.border {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: peru;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: Garamond;
+
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 
