@@ -1,0 +1,222 @@
+.border {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: peru;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: Elephant;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.thick {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .border {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .border li {
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+}
+
+.spatiu-intre-sectiuni {
+    height: 50px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    width: 30%;
+    padding: 20px;
+    background-color: rgb(243, 201, 149);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item h3 {
+    font-size: 1.3em;
+    color: rgb(161, 80, 0);
+}
+
+.contact-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Contact */
+.contact-form {
+    margin-top: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(243, 201, 149);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    font-size: 1.5em;
+    color: rgb(161, 80, 0);
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    color: rgb(100, 50, 0);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: rgb(161, 80, 0);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #8f4b0e;
+}
+
+.active {
+    color: rgb(135, 70, 5);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 1em;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /* Bara de navigare */
+    .border {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .border li {
+        margin: 10px 0;
+    }
+
+    .thick {
+        font-size: 1.8em;
+    }
+
+    #contact-section {
+        text-align: center;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #contact-section h2 {
+        font-size: 1.8em;
+    }
+
+    /* adresă, telefon, email */
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .contact-item {
+        margin-bottom: 20px;
+        text-align: center;
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .contact-item h3 {
+        font-size: 1.3em;
+        color: rgb(161, 80, 0);
+    }
+
+    /* Formularul de contact */
+    .contact-form {
+        width: 94%;
+        margin-top: 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .contact-form h3 {
+        font-size: 1.3em;
+        color: rgb(161, 80, 0);
+        margin-bottom: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .contact-form input[type="submit"] {
+        padding: 15px 20px;
+        background-color: rgb(161, 80, 0);
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .contact-form input[type="submit"]:hover {
+        background-color: #8f4b0e;
+    }
+}

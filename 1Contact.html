@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="1Contact.css" />
+</head>
+
+<body style="background-color: rgb(255, 229, 194);">
+  <ul class="border">
+    <li>
+      <h1 style="color: rgb(255, 255, 255)" id="Titlul" class="thick"><a href="1site.html"
+          style="text-decoration: none;"> Ansamblul Hecenii </a> </h1>
+    </li>
+    <li>
+      <h1 style="color: rgb(255, 255, 255)" id="Titlul"><a href="1Membri.html"
+          style="text-decoration: none;">Membri</a> </h1>
+    </li>
+    <li>
+      <h1 style="color: rgb(255, 255, 255)" id="Titlul"><a href="1Poze.html"> Poze </a> </h1>
+    </li>
+    <li>
+      <h1 style="color: rgb(255, 255, 255)" id="Titlul"><a href="1Contact.html" class="active">Contact</a></h1>
+    </li>
+    <li>
+      <h1 style="color: rgb(255, 255, 255)" id="Titlul"><a href="1Contact.html"> Repertoriu </a> </h1>
+    </li>
+  </ul>
+
+  <div id="contact-section" style="text-align: center; margin-top: 40px;">
+    <h2 style="color: rgb(161, 80, 0); font-size: 2em;">Contactează-ne</h2>
+    <p style="font-size: 1.1em; color: rgb(100, 50, 0); margin-bottom: 20px;">
+      Pentru mai multe informații despre proiectele noastre sau pentru a colabora cu noi, nu ezita să ne contactezi.
+    </p>
+
+    <div class="contact-info">
+      <div class="contact-item">
+        <h3 style="color: rgb(161, 80, 0);">Adresă</h3>
+        <p>Centru, Heciul Nou, Moldova</p>
+      </div>
+      <div class="contact-item">
+        <h3 style="color: rgb(161, 80, 0);">Telefon</h3>
+        <p>(+373) 797 455 46</p>
+      </div>
+      <div class="contact-item">
+        <h3 style="color: rgb(161, 80, 0);">Email</h3>
+        <p>ansamblul.hecenii@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3 style="color: rgb(161, 80, 0);">Trimite-ne un mesaj</h3>
+      <form action="/submit-form" method="POST" style="text-align: left; display: inline-block; margin-top: 20px;">
+        <label for="nume">Numele tău:</label><br>
+        <input type="text" id="nume" name="nume" required style="padding: 10px; width: 100%; margin-bottom: 10px;"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required
+          style="padding: 10px; width: 100%; margin-bottom: 10px;"><br>
+
+        <label for="mesaj">Mesaj:</label><br>
+        <textarea id="mesaj" name="mesaj" rows="4" required
+          style="padding: 10px; width: 100%; margin-bottom: 10px;"></textarea><br>
+
+        <input type="submit" value="Trimite mesajul"
+          style="background-color: rgb(161, 80, 0); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

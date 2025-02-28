@@ -1,0 +1,238 @@
+/* Bara de navigare */
+.border {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: peru;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: Elephant;
+
+}
+
+ul {
+  list-style: none;
+}
+
+.thick {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active {
+  color: rgb(135, 70, 5);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .border {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .border li {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+}
+
+#participanti-section {
+  padding: 20px;
+  background-color: rgb(255, 229, 194);
+  border-radius: 10px;
+}
+
+/* Coregrafului */
+.coregraf-card {
+  text-align: center;
+  background-color: rgb(243, 201, 149);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.participant-image-large {
+  width: 230px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid rgb(161, 80, 0);
+}
+
+.participant-name-large {
+  font-size: 1.5em;
+  color: rgb(161, 80, 0);
+}
+
+.participant-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.participant-card {
+  width: 220px;
+  text-align: center;
+  background-color: rgb(243, 201, 149);
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.participant-card:hover {
+  transform: scale(1.05);
+}
+
+.participant-image {
+  align-items: center;
+  justify-content: center;
+  max-width: 170px;
+  max-height: 188px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 3px solid rgb(161, 80, 0);
+}
+
+
+.participant-name {
+  font-size: 1.2em;
+  color: rgb(161, 80, 0);
+}
+
+.spatiu-intre-sectiuni {
+  height: 50px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  width: 30%;
+  padding: 20px;
+  background-color: rgb(243, 201, 149);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item h3 {
+  font-size: 1.3em;
+  color: rgb(161, 80, 0);
+}
+
+.contact-item p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+
+  .coregraf-card {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(243, 201, 149);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    width: 65%;
+
+  }
+
+  .participant-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 10px;
+    height: 20px;
+    width: 50%;
+
+  }
+
+  .participant-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 220px;
+  }
+
+  .participant-image {
+    width: 130px;
+    height: 140px;
+    max-height: 200px;
+  }
+
+  .participant-name {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+  body {
+    font-size: 1em;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .border li {
+    margin: 10px 0;
+  }
+
+  .thick {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 600px) {
+  .participant-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .participant-card {
+    text-align: center;
+  }
+
+  .participant-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .participant-name {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+}
