@@ -1,14 +1,3 @@
-.border {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    background-color: peru;
-    border-radius: 10px;
-    text-decoration: none;
-    font-family: Elephant;
-
-}
 
 ul {
     list-style: none;
