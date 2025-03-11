@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/1Repertoriul.css" />
     <link rel="stylesheet" href="style/1main.css" />
 </head>
-<body>
+<body style="background-color: rgb(255, 229, 194);">
 
     <!-- Bara de navigare -->
   <ul class="border">
@@ -29,49 +29,14 @@
       <h1 style="color: rgb(255, 255, 255)" id="Titlul"><a href="1Repertoriul.html" class="active"> Repertoriu </a> </h1>
     </li>
   </ul>
-
-    <h1>Repertoriul Ansamblului Hecenii</h1>
+<h1 style="text-align: center; margin-top: 20px;">Repertoriul Ansamblului Hecenii</h1>
+    <div class="conta">
     <div class="container">
-        <div class="card">
-            <img src="dance1.jpg" alt="Dans 1">
+            <img style="margin-right: 10px" src="dance1.jpg" alt="Dans 1">
+          </div>
             <h2>Suita ca la Heci</h2>
             <p>Un dans energic din zona Codrilor.</p>
-            <a href="#" class="button">Vezi mai mult</a>
         </div>
-        <div class="card">
-            <img src="dance2.jpg" alt="Dans 2">
-            <h2>Hora Moldovenească</h2>
-            <p>O horă tradițională plină de ritm.</p>
-            <a href="#" class="button">Vezi mai mult</a>
-        </div>
-        <div class="card">
-            <img src="dance3.jpg" alt="Dans 3">
-            <h2>Hora ca la Sud</h2>
-            <p>Un dans rapid și plin de viață.</p>
-            <a href="#" class="button">Vezi mai mult</a>
-        </div>
-    </div>
-    <div class="carousel">
-        <div class="slides">
-            <div class="slide"><img src="images/08.jpeg" alt="Dans 1"></div>
-            <div class="slide"><img src="dance2.jpg" alt="Dans 2"></div>
-            <div class="slide"><img src="images/22.png" alt="Dans 3"></div>
-        </div>
-        <div class="buttons">
-            <button onclick="prevSlide()">&#10094;</button>
-            <button onclick="nextSlide()">&#10095;</button>
-        </div>
-    </div>
-    <script>
-        let index = 0;
-        function showSlide(i) {
-            const slides = document.querySelector('.slides');
-            const total = document.querySelectorAll('.slide').length;
-            index = (i + total) % total;
-            slides.style.transform = `translateX(-${index * 100}%)`;
-        }
-        function prevSlide() { showSlide(index - 1); }
-        function nextSlide() { showSlide(index + 1); }
-    </script>
+      </div>
 </body>
 </html>
