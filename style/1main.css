@@ -331,9 +331,8 @@ a {
 }
 
 .active {
-  color: rgb(135, 70, 5);
-  font-weight: bold;
-  text-decoration: none;
+  color: rgb(161, 80, 0);
+  font-weight:700;
 }
 
 @media (max-width: 600px) {
